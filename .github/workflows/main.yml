@@ -27,10 +27,10 @@ jobs:
 
     - name: Build with Gradle
       run: gradle build
-      working-directory: .
+      working-directory: MinecraftAIBuild-Fabric-1.21.11(1)/MinecraftAIBuild-Fabric-1.21.11
 
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: fabric-mod
-        path: build/libs/*.jar
+        name: apex-client
+        path: '**/build/libs/*.jar'
